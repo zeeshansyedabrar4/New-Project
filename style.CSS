@@ -1,0 +1,159 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+body{
+    font-family: 'Roboto Serife',serif;
+    color: #fff;
+    background-image: url("contact.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    padding-bottom: 5em;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+   width: 90%;
+
+
+}
+
+.sectionheader{
+    text-transform: capitalize;
+    font-weight: bold;
+    font-size: 4vw;
+    color: rgb(0, 238, 255);
+    margin-bottom: .5em;
+}
+.heading,.subheading{
+margin-bottom: .5em;
+font-weight: bold;
+}
+
+.sub-heading{
+    text-align: left;
+}
+
+.cform,.map-container{
+    width: 45%;
+    height: fit-content;
+}
+.contactForm{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap !important;
+
+  
+}
+
+
+.para{
+    color: rgb(197, 196, 189);
+    font-size: 1.1rem;
+    line-height: 1.5em;
+margin-bottom: 1em;
+}
+
+.para2{
+    text-align: left;
+}
+
+form{
+    width: 100%;
+}
+
+.input{
+    width: 100%;
+max-width: 700px;
+padding: 1em;
+font-size: .9rem;
+border: none;
+outline: none;
+margin-bottom: 1em;
+background-color: #fff;
+color: black;
+border-radius: 10px;
+border: 3px solid #06caec;
+}
+
+.input:focus{
+    border-radius: 1px solid var(--primary-color);
+}
+
+.input::placeholder{
+    text-transform: capitalize;
+}
+
+.submitbtn{
+    background-color: #0671ec;
+    padding: 1.5em;
+    border-radius: 10%;
+    border: none;
+    color: var(--text-color);
+    font-weight: bold;
+    cursor: pointer;
+    width: 100%;
+}
+.submitbtn:hover{
+    color: #0671ec;
+    background-color: #ffffff;
+    border: 3px solid #06caec ;
+    border-radius: 18px;
+}
+
+
+
+.mapBg{
+    position: relative;
+    background-color: rgb(4, 42, 255);
+    top: 0;
+    right: 0;
+    width: 500px;
+    height: 100%;
+    border-radius: 20px;
+}
+
+.map{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 90%;
+    height: 90%;
+}
+
+.map iframe{
+    width: 50%;
+    height: 70%;
+    display: flex;
+    justify-content: center;
+}
+
+.contactMethod{
+    display: flex;
+    flex-direction: column;
+    margin-top: 2em;
+    text-align: left;
+}
+
+.method{
+    display: flex;
+    align-items: center;
+}
+
+.contactIcon{
+    font-size: 2rem;
+color: #06caec ;
+width: 70px;
+}
+
+@media screen and(min-width:800px) {
+section{
+    max-width: 1100px;
+}}
+
